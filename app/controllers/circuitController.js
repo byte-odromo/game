@@ -1,4 +1,4 @@
 module.exports = function( req, res, next ) {
 	var viewPath = __dirname + '/../views';
-	res.render( viewPath + '/myGame.html' );
+	res.render( viewPath + '/race-circuit.html' );
 };

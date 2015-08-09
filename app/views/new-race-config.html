@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Byte-odromo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../byte-odromo/style/bootstrap.min.css">
+        <link rel="stylesheet" href="../byte-odromo/style/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="panel panel-default" id="main-lobby-panel">
+                <div class="panel-heading">
+                    <h1>This is a new race</h1>
+                </div>
+                <div class="panel-body">
+                    <p>You are accesing as spectator. Once race is created use the info on screen to join racers from mobile devices</p>
+                    <label for="race-name">Race's Name</label>
+                    <input id="race-name" name="race-name" type="text" value="Indianapolis 500" />
+                    <a class="btn btn-default" onClick="UI.goButtonClickHandler();" id="go-button">GO TO CIRCUT</a>
+                    <a class="btn btn-default">EXIT</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../socket.io/socket.io.js"></script>
+        <script src="../byte-odromo/js/race-config.js"></script>
+    </body>
+</html>

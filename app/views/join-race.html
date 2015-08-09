@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Byte-odromo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../byte-odromo/style/bootstrap.min.css">
+        <link rel="stylesheet" href="../byte-odromo/style/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="panel panel-default" id="main-lobby-panel">
+                <div class="panel-heading">
+                    <h1>Welcome to <span id="race-name"></span></h1>
+                </div>
+                <div class="panel-body">
+                    <p>Give your name</p>
+                    <input type="text" value="cacho" id="player-name" />
+                    <a class="btn btn-default" onClick="UI.readyToGoHandler();" id="go-button">READY TO GO!</a>
+                </div>
+            </div>
+        </div>
+
+        <script src="../socket.io/socket.io.js"></script>
+        <script src="../byte-odromo/js/join-race-screen.js"></script>
+    </body>
+</html>

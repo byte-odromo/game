@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Byte-odromo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="byte-odromo/style/bootstrap.min.css">
+        <link rel="stylesheet" href="byte-odromo/style/main.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="panel panel-default" id="main-lobby-panel">
+                <div class="panel-heading">
+                    <h1>Welcome to Byte-o-dromo!</h1>
+                </div>
+                <div class="panel-body">
+                    <label>choose an option:</label>
+                    <a class="btn btn-default" href="./newrace">NEW RACE</a>
+                    <label>or</label>
+                    <input type="text" id="race-code" placeholder="insert race's code" /><a class="btn btn-default" onClick="window.location.href='./joinrace/' + document.querySelector('#race-code').value;">JOIN A RACE</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
