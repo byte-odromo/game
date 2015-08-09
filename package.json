@@ -1,0 +1,14 @@
+{
+  "name": "byte-odromo-game",
+  "version": "0.0.0",
+  "main": "game.js",
+  "private": true,
+  "scripts": {
+    "start": "node index"
+  },
+  "dependencies": {
+    "ejs": "^2.3.3",
+    "express": "^4.10.2",
+    "socket.io": "^1.3.6"
+  }
+}
