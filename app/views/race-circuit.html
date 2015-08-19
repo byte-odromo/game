@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
     <head>
         <title>Byte-odromo</title>
@@ -7,7 +6,7 @@
         <link rel="stylesheet" href="../../byte-odromo/style/main.css">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid" id="awaiting-container">
             <div class="panel panel-default" id="main-lobby-panel">
                 <div class="panel-heading">
                     <h1>Welcome to <span id="race-name"></span></h1>
@@ -16,8 +15,22 @@
                     <p>Join this race with the code <span id="race-code"></span></p>
                 </div>
             </div>
+            @TODO: list players in session and when all ready, render circuit
         </div>
-        @TODO: list players in session and when all ready, render circuit
+        <div id="race-container">
+            <div class="circuit">
+                <div class="track"></div>
+                <div class="car stopped" id="car">
+                    <img src="../../byte-odromo/style/images/Car.png" />
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="race-finished">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h1>The race has finished!!</h1>
+                </div>
+        </div>
 
         <script src="../../socket.io/socket.io.js"></script>
         <script src="../../byte-odromo/js/race-screen.js"></script>
