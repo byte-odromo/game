@@ -25,6 +25,10 @@ h1 {
     background-color: #006400;
 }
 
+#race-finished {
+    display: none;
+}
+
 .circuit {
     width: 100%;
     height: 100px;
